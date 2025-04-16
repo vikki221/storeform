@@ -5,14 +5,26 @@
     <listener class-name="listeners.CustomListener"/>
   </listeners>
   <test thread-count="5" name="test(failed)">
+    <parameter name="browser" value="chromium"/>
     <classes>
-      <class name="storetest.test">
+      <class name="storetest.StoreDetails">
         <methods>
-          <include name="testOpenWebsite"/>
           <include name="closeBrowser"/>
-          <include name="stateselect"/>
+          <include name="duplicatephonenumber"/>
+          <include name="testOpenWebsite"/>
         </methods>
-      </class> <!-- storetest.test -->
+      </class> <!-- storetest.StoreDetails -->
+      <class name="storetest.KYCPage">
+        <methods>
+          <include name="maxSizeKYCDocument"/>
+          <include name="unsupportedKYCDocument"/>
+          <include name="deleteKYCDocument"/>
+          <include name="closeBrowser"/>
+          <include name="emptyKYCDocument"/>
+          <include name="testOpenWebsite"/>
+          <include name="viewKYCDocument"/>
+        </methods>
+      </class> <!-- storetest.KYCPage -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->

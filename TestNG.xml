@@ -6,12 +6,11 @@
     </listeners>
 
     <test name="test">
+        <parameter name="browser" value="chromium"/>
         <classes>
-            <class name="storetest.test">
-                <methods>
-                    <include name="dd"/>
-                </methods>
-            </class>
+            <class name="storetest.StoreDetails"/>
+            <class name="storetest.BankDetails"/>
+            <class name="storetest.KYCPage"/>
         </classes>
     </test>
 </suite>

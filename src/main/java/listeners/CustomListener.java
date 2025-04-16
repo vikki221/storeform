@@ -4,13 +4,12 @@ import com.aventstack.extentreports.ExtentReports;
 
 
 
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -42,7 +41,8 @@ public class CustomListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        test.fail("Test failed with exception: " + result.getThrowable().getMessage());
+    
+        test.fail("Test case failed");
     }
 
     @Override

@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="68" total="69" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T10:57:16 IST" name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Test Suite]]]]]]]]]]]" finished-at="2025-04-16T10:57:42 IST" duration-ms="25859">
+  <suite started-at="2025-04-16T14:14:49 IST" name="Test Suite" finished-at="2025-04-16T14:15:14 IST" duration-ms="25040">
     <groups>
     </groups>
-    <test started-at="2025-04-16T10:57:16 IST" name="test(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)" finished-at="2025-04-16T10:57:42 IST" duration-ms="25859">
-      <class name="storetest.StoreDetails">
-        <test-method is-config="true" signature="testOpenWebsite(java.lang.String)[pri:0, instance:storetest.StoreDetails@1c1bbc4e]" started-at="2025-04-16T10:57:16 IST" name="testOpenWebsite" finished-at="2025-04-16T10:57:27 IST" duration-ms="11255" status="PASS">
+    <test started-at="2025-04-16T14:14:49 IST" name="test" finished-at="2025-04-16T14:15:14 IST" duration-ms="25040">
+      <class name="storetest.KYCPage">
+        <test-method is-config="true" signature="testOpenWebsite(java.lang.String,org.testng.ITestContext)[pri:0, instance:storetest.KYCPage@5542c4ed]" started-at="2025-04-16T14:14:49 IST" name="testOpenWebsite" finished-at="2025-04-16T14:15:01 IST" duration-ms="11924" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[chromium]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@42cc13a0]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testOpenWebsite -->
-        <test-method signature="duplicatephonenumber()[pri:48, instance:storetest.StoreDetails@1c1bbc4e]" started-at="2025-04-16T10:57:27 IST" name="duplicatephonenumber" finished-at="2025-04-16T10:57:41 IST" duration-ms="13891" status="PASS">
+        <test-method signature="kycpage()[pri:116, instance:storetest.KYCPage@5542c4ed]" started-at="2025-04-16T14:15:01 IST" name="kycpage" finished-at="2025-04-16T14:15:13 IST" duration-ms="12544" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- duplicatephonenumber -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:storetest.StoreDetails@1c1bbc4e]" started-at="2025-04-16T10:57:41 IST" name="closeBrowser" finished-at="2025-04-16T10:57:42 IST" duration-ms="434" status="PASS">
+        </test-method> <!-- kycpage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:storetest.KYCPage@5542c4ed]" started-at="2025-04-16T14:15:13 IST" name="closeBrowser" finished-at="2025-04-16T14:15:14 IST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- storetest.StoreDetails -->
-    </test> <!-- test(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed)(failed) -->
-  </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Test Suite]]]]]]]]]]] -->
+      </class> <!-- storetest.KYCPage -->
+    </test> <!-- test -->
+  </suite> <!-- Test Suite -->
 </testng-results>

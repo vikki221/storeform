@@ -3,6 +3,7 @@ package storetest;
 
 import com.microsoft.playwright.Locator;
 
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
@@ -11,8 +12,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(listeners.CustomListener.class)
 public class StoreDetails extends BaseClass{
 	
 	
@@ -69,7 +72,7 @@ public class StoreDetails extends BaseClass{
 	        page.waitForTimeout(2000);
 	        st.clickNext();
 	        
-	        String expectedErrorMessage = "Unsupported format, must be JPEG, PNG";
+	        String expectedErrorMessage = "Unsupporte format, must be JPEG, PNG";
 	        String errorMessage = page.locator("//div[contains(@class, 'fnIpjs') and contains(text(), 'Unsupported format')]").innerText();
 	        Assert.assertEquals(errorMessage, expectedErrorMessage, "Incorrect error message displayed!");
 

@@ -9,22 +9,11 @@
     <classes>
       <class name="storetest.StoreDetails">
         <methods>
+          <include name="verifyUnsupportedFileUpload"/>
           <include name="closeBrowser"/>
-          <include name="duplicatephonenumber"/>
           <include name="testOpenWebsite"/>
         </methods>
       </class> <!-- storetest.StoreDetails -->
-      <class name="storetest.KYCPage">
-        <methods>
-          <include name="maxSizeKYCDocument"/>
-          <include name="unsupportedKYCDocument"/>
-          <include name="deleteKYCDocument"/>
-          <include name="closeBrowser"/>
-          <include name="emptyKYCDocument"/>
-          <include name="testOpenWebsite"/>
-          <include name="viewKYCDocument"/>
-        </methods>
-      </class> <!-- storetest.KYCPage -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->

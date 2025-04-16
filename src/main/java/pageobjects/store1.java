@@ -237,8 +237,8 @@ public class store1 {
 	    public void fillbothpage() throws InterruptedException {
 	    	uploadStoreLogo("C:\\Users\\VickySekar\\Downloads\\logo.jpg");
 			page.waitForTimeout(2000);
-			enterStorename("Croma");
-			selectCategory("Home & Kitchen");
+			enterStorename("Dominos");
+			selectCategory("F&B");
 			selectState("ANDHRA PRADESH");
 			selectCity("GUNTUR");
 			selectPincode("522001");
